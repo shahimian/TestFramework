@@ -1,8 +1,6 @@
-#pragma once
-#include <assert.h>
-#include <iostream>
+#include "Exception.h"
 
-class TestFramework {
+class __declspec(dllexport) TestFramework: public Exception {
     std::string className;
 public:
     TestFramework(std::string);
